@@ -61,7 +61,7 @@ export default function Portfolio()
             <div className="h-40"></div>
             {/* ------------------------------------------Work portion------------------------------------ */}
             
-            <div className="w-full max-w-[100rem] columns-3 gap-5">
+            <div className="w-full max-w-[100rem] sm:columns-1  md:columns-2 lg:columns-3 gap-5">
                 <div className="flex flex-col flex-wrap space-y-6">
                     <Link to="https://www.behance.net/gallery/157477497/Animena-UIUX-Design" target="_blank">
                         <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
@@ -254,29 +254,29 @@ export default function Portfolio()
                 <h1 className="text-4xl text-[#444444] font-bold">My Skills</h1>
             </div>
            {/* ---------------------------------------Skills------------------------------------------------ */}
-           <div className="pl-32 pr-32 grid grid-cols-4 place-content-center">
-                <div className="grid place-content-center drop-shadow-sm border-[#444444] hover:border-b-2 hover:border-r-2 h-52 ">
-                    <DiIllustrator size={90} fill="#878787" />
+           <div className="sm:pl-32 sm:pr-32 pl-2 pr-2 grid grid-cols-3 sm:grid-cols-4 place-content-center">
+                <div className="grid place-content-center drop-shadow-sm border-[#444444] hover:border-b-2 hover:border-r-2 md:h-52 sm:h-42 h-32 ">
+                    <DiIllustrator size={90} fill="#878787"/>
                 </div>
-                <div className="grid place-content-center border-[#444444] hover:border-b-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm  h-52 ">
+                <div className="grid place-content-center border-[#444444] hover:border-b-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32">
                     <DiPhotoshop size={90}/>
                 </div>
-                <div className="grid place-content-center border-[#444444] hover:border-b-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm h-52 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <SiAdobexd size={75} fill="#878787"/>
                 </div>
-                <div className="grid place-content-center border-[#444444] hover:border-b-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm  h-52 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
                 <FiFigma size={75}/>
                 </div>
-                <div className="grid place-content-center  border-[#444444] hover:border-t-2 hover:border-r-2 drop-shadow-sm h-52 ">
+                <div className="grid place-content-center  border-[#444444] hover:border-t-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <ImHtmlFive2 size={75} />
                 </div>
-                <div className="grid place-content-center border-[#444444] hover:border-t-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm h-52 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <TbBrandCss3 size={95} stroke="#878787"/>
                 </div>
-                <div className="grid place-content-center  border-[#444444] hover:border-t-2 hover:border-l-2 hover:border-r-2 drop-shadow-sm h-52 ">
+                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2  hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <FaReact size={85}/>
                 </div>
-                <div className="grid place-content-center border-[#444444] hover:border-t-2 hover:border-l-2 drop-shadow-sm h-52 ">
+                <div className="grid place-content-center border-[#444444] hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <SiTailwindcss size={75} fill="#878787"/>
                 </div>
             </div>
@@ -284,24 +284,24 @@ export default function Portfolio()
             <div className="flex flex-col items-center space-y-8">
                 <span className="w-full p-0.5 bg-[#F7931E] lg:w-2/3"></span>
                 <div className="h-24"></div>
-                <Link to="/about">
-                    <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
-                        <h1 className="text-xl p-2 pl-6 pr-6  font-semibold text-[#444444] hover:text-[#EAE8E8] ">About Me</h1>
-                    </div>
-                </Link>
-                <Link to="/contact">
-                    <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
-                        <h1 className="text-xl p-2 pl-4 pr-4 font-semibold text-[#444444] hover:text-[#EAE8E8]">Contact Me</h1>
-                    </div>
-                </Link>
-                <Link to="https://www.linkedin.com/in/rehmatlink/ "  target="_blank">
-                    <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
-                        <h1 className="text-xl p-2 pl-8 pr-8 font-semibold text-[#444444] hover:text-[#EAE8E8]">Linkedin</h1>
-                    </div>
-                </Link>
+                    <Link to="/about">
+                        <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
+                            <h1 className="text-xl p-2 pl-6 pr-6  font-semibold text-[#444444] hover:text-[#EAE8E8] ">About Me</h1>
+                        </div>
+                    </Link>
+                    <Link to="/contact">
+                        <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
+                            <h1 className="text-xl p-2 pl-4 pr-4 font-semibold text-[#444444] hover:text-[#EAE8E8]">Contact Me</h1>
+                        </div>
+                    </Link>
+                    <Link to="https://www.linkedin.com/in/rehmatlink/ "  target="_blank">
+                        <div className="grid place-content-center border-2 border-[#444444] hover:bg-[#444444] hover:scale-110">
+                            <h1 className="text-xl p-2 pl-8 pr-8 font-semibold text-[#444444] hover:text-[#EAE8E8]">Linkedin</h1>
+                        </div>
+                    </Link>
                 
                 <div className="h-20"></div>
-                <div className="flex w-2/4 place-content-around">
+                <div className="flex flex-row flex-wrap space-x-10 place-content-around">
                     <h1>rehmat.e.mustafa2@gmail.com</h1>
                     <Link to="https://www.linkedin.com/in/rehmatlink/" target="_blank">
                         <h1>Linkedin</h1>

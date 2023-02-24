@@ -51,7 +51,7 @@ export default function Contact()
 
 
     return(
-        <div className="bg-[#EAE8E8] h-full h-screen">
+        <div className="bg-[#EAE8E8] h-full lg:h-screen">
              <div className="w-full flex place-content-between pr-8 p-4 fixed z-50 bg-[#EAE8E8]  ">
                 <div className="pl-20 ">
                     <img src={Sign} className="w-24"/>
@@ -72,67 +72,70 @@ export default function Contact()
                 </div>
                 
             </div>
-            <div className="flex pt-28">
-                <div className="flex flex-col justify-center items-center space-y-12 w-1/2 h-96 ">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 pt-28">
+                <div className="flex flex-col justify-center items-center space-y-12 h-96 ">
                     <div className="relative">
                         <img className=" w-96" src={Blob} alt="" />
                         <h1 className="absolute h-40 -top-4 text-6xl text-[#424241] ">Let's Get<br></br>in Contact</h1>
 
                     </div>
                 </div>
-                <div className="w-1/2 flex flex-col items-center space-y-4">
-                    <form className="w-3/5 flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
+                <div className=" space-y-4">
+                    <div className="w-full">
+                        <form className="flex flex-col items-center md:items-start gap-4" ref={form} onSubmit={sendEmail}>
 
-                        <div>
-                            <label className="text-black text-lg" htmlFor="name">
-                                Name
-                            </label>
-                            <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
-                                name="userName"
-                                required={true}
-                                type="text"
-                                placeholder="Name" />
-                        </div>
-                        <div>
-                            <label className="text-black text-lg" htmlFor="email">
-                                Email
-                            </label>
-                            <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
-                                name="userEmail"
-                                required={true}
-                                type="email"
-                                placeholder="example@gmail.com" />
-                        </div>
-                        <div>
-                            <label className="text-black text-lg" htmlFor="name">
-                                Subject
-                            </label>
-                            <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
-                                name="subject"
-                                required={true}
-                                type="text"
-                                placeholder="Subject" />
-                        </div>
-                        <div className="w-full">
-                            <label className="text-black text-lg" htmlFor="message">
-                                Message
-                            </label>
-                            <textarea className="border-0 border-solid border-b border-gray-600 dark:border-gray-200 w-full bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
-                                id="message"
-                                name="message"
-                                required={true}
-                                placeholder="Enter your message here!"
-                                cols="12"
-                                rows="4"></textarea>
-                        </div>
+                            <div className="w-2/4 md:w-3/4 ">
+                                <label className="text-black text-lg" htmlFor="name">
+                                    Name
+                                </label>
+                                <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
+                                    name="userName"
+                                    required={true}
+                                    type="text"
+                                    placeholder="Name" />
+                            </div>
+                            <div className="w-2/4 md:w-3/4 ">
+                                <label className="text-black text-lg" htmlFor="email">
+                                    Email
+                                </label>
+                                <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
+                                    name="userEmail"
+                                    required={true}
+                                    type="email"
+                                    placeholder="example@gmail.com" />
+                            </div>
+                            <div className="w-2/4 md:w-3/4 ">
+                                <label className="text-black text-lg" htmlFor="name">
+                                    Subject
+                                </label>
+                                <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
+                                    name="subject"
+                                    required={true}
+                                    type="text"
+                                    placeholder="Subject" />
+                            </div>
+                            <div className="w-2/4 md:w-3/4 ">
+                                <label className="text-black text-lg" htmlFor="message">
+                                    Message
+                                </label>
+                                <textarea className="border-0 border-solid border-b border-gray-600 dark:border-gray-200 w-full bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
+                                    id="message"
+                                    name="message"
+                                    required={true}
+                                    placeholder="Enter your message here!"
+                                    cols="12"
+                                    rows="4"></textarea>
+                            </div>
 
-                        {/* send button */}
-                            <button type="submit" value="Send" className="buttonStyle h-10 rounded self-end hover:scale-105 hover:drop-shadow-lg bg-[#ED6A11] w-28 text-lg">Send
-                            </button>
-                        
+                            {/* send button */}
+                                <button type="submit" value="Send" className="mr-12 m-2 h-10 rounded self-end hover:scale-105 hover:drop-shadow-lg bg-[#ED6A11] w-28 text-lg">Send
+                                </button>
+
                             <ToastContainer/>
 
-                    </form>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
             
