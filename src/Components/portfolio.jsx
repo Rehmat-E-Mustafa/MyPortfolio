@@ -267,7 +267,7 @@ export default function Portfolio()
                 <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
                 <FiFigma size={75}/>
                 </div>
-                <div className="grid place-content-center  border-[#444444] hover:border-t-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-t-2 sm:hover:border-r-2 hover:border-l-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <ImHtmlFive2 size={75} />
                 </div>
                 <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
@@ -301,7 +301,7 @@ export default function Portfolio()
                     </Link>
                 
                 <div className="h-20"></div>
-                <div className="flex flex-row flex-wrap space-x-10 place-content-around">
+                <div className="flex flex-row flex-wrap space-x-10 place-content-around m-6">
                     <h1>rehmat.e.mustafa2@gmail.com</h1>
                     <Link to="https://www.linkedin.com/in/rehmatlink/" target="_blank">
                         <h1>Linkedin</h1>

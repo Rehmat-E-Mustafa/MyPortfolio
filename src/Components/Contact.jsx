@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import Sign from "./images/myLogo.png";
 import 'react-toastify/dist/ReactToastify.css';
-
 export default function Contact()
 {
     const Sent = () => toast.success('Message is sent', {
@@ -75,7 +74,7 @@ export default function Contact()
             <div className="w-full grid grid-cols-1 md:grid-cols-2 pt-28">
                 <div className="flex flex-col justify-center items-center space-y-12 h-96 ">
                     <div className="relative">
-                        <img className=" w-96" src={Blob} alt="" />
+                        <img className="w-72 sm:w-96" src={Blob} alt="" />
                         <h1 className="absolute h-40 -top-4 text-6xl text-[#424241] ">Let's Get<br></br>in Contact</h1>
 
                     </div>
@@ -84,7 +83,7 @@ export default function Contact()
                     <div className="w-full">
                         <form className="flex flex-col items-center md:items-start gap-4" ref={form} onSubmit={sendEmail}>
 
-                            <div className="w-2/4 md:w-3/4 ">
+                            <div className="w-3/4  ">
                                 <label className="text-black text-lg" htmlFor="name">
                                     Name
                                 </label>
@@ -94,17 +93,17 @@ export default function Contact()
                                     type="text"
                                     placeholder="Name" />
                             </div>
-                            <div className="w-2/4 md:w-3/4 ">
+                            <div className="w-3/4 ">
                                 <label className="text-black text-lg" htmlFor="email">
                                     Email
                                 </label>
                                 <input className="border-0 border-solid border-b border-gray-600 dark:border-gray-400 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
                                     name="userEmail"
-                                    required={true}
                                     type="email"
+                                    required={true}
                                     placeholder="example@gmail.com" />
                             </div>
-                            <div className="w-2/4 md:w-3/4 ">
+                            <div className="w-3/4 ">
                                 <label className="text-black text-lg" htmlFor="name">
                                     Subject
                                 </label>
@@ -114,11 +113,11 @@ export default function Contact()
                                     type="text"
                                     placeholder="Subject" />
                             </div>
-                            <div className="w-2/4 md:w-3/4 ">
+                            <div className="w-3/4 ">
                                 <label className="text-black text-lg" htmlFor="message">
                                     Message
                                 </label>
-                                <textarea className="border-0 border-solid border-b border-gray-600 dark:border-gray-200 w-full bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
+                                <textarea className="border-0 border-solid border-b border-gray-600 dark:border-gray-200 w-full appearance-none bg-transparent text-black focus:outline-none font-light pt-2 pb-1"
                                     id="message"
                                     name="message"
                                     required={true}

@@ -35,20 +35,20 @@ export default function About()
                 </div>
                 
             </div>
-            <div className="columns-1 lg-columns-2 w-full pt-28 w-full ">
+            <div className="columns-1 md:columns-2 w-full pt-28 w-full ">
                 <div className="flex justify-center h-[32rem] bg-gradient-to-l from-black/10 via-black/20 to-black-40">
                     <div className="w-60 h-auto drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)]">
                         <div className="border-2 border-black w-80 absolute  h-64 -right-10 top-24"></div>
-                        <div className="border-2 border-black w-32 absolute  h-24 left-52 top-72"></div>
-                        <div className="border-2 border-black w-56 absolute  h-6 left-52 top-32"></div>
+                        <div className="border-2 border-black w-20 sm:w-32 absolute  h-24 left-52 top-72"></div>
+                        <div className="border-2 border-black w-20 sm:w-56 absolute  h-6 left-52 top-32"></div>
                         <div className="border-2 border-black w-10 absolute  h-10 right-52 top-32"></div>
                         <img className="" src={MyPic} />
                     </div>
                 </div>
-                <div className="flex flex-col items-center lg:items-start p-10 pl-20 space-y-4">
+                <div className="md:pt-20 flex flex-col items-center lg:items-start p-10 pl-20 space-y-4">
                     <h1 className="text-5xl text-[#424241] font-semibold">Hi,I'm<br></br>Rehmat E Mustafa</h1>
-                    <p className="w-96 text-xl text-[#606060]">As a curious UI UX and visual designer in Lahore, Pakistan I believe in problem solving, and work to inspire others.<br/><br/>My goal is to learn, grow and create designs to enhace my creativity and to provide out of the box solutions and wonderful experience to users.</p>
-                    <div className="flex space-x-10 p-12">
+                    <p className=" text-xl text-[#606060]">As a curious UI UX and visual designer in Lahore, Pakistan I believe in problem solving, and work to inspire others.<br/><br/>My goal is to learn, grow and create designs to enhace my creativity and to provide out of the box solutions and wonderful experience to users.</p>
+                    <div className="flex flex-wrap sm:space-x-10 space-x-4 sm:p-12 pt-8">
                         <Link to="https://www.instagram.com/artic_realm/" target="_blank">
                             <AiOutlineInstagram size={35} className="hover:scale-125"/>
                         </Link>
