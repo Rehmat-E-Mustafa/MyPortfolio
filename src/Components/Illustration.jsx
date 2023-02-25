@@ -1,8 +1,5 @@
-import Img from "./images/Asset3.png";
+
 import MoodBoard from "./images/moodboard.jpeg";
-import DonarApp from "./images/donarapp.png";
-import Wireframe from "./images/wireFrame.png";
-import AnimeApp from "./images/animeApp.png";
 import Lily from "./images/lily.png";
 import BFlower from "./images/blackflower.png";
 import HalloweenSVG from "./images/halloweentransport.png";
@@ -17,14 +14,6 @@ import Beauty from "./images/beauty.png";
 import Minimal from "./images/minimal.png";
 import {AiFillBehanceCircle,AiFillInstagram } from "react-icons/ai";
 import Resume from "./images/Rehmat_cv.pdf";
-import {DiIllustrator} from "react-icons/di";
-import {DiPhotoshop} from "react-icons/di";
-import {SiAdobexd} from "react-icons/si";
-import {FaReact} from "react-icons/fa";
-import {SiTailwindcss} from "react-icons/si";
-import {TbBrandCss3} from "react-icons/tb";
-import {ImHtmlFive2} from "react-icons/im";
-import {FiFigma} from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import Sign from "./images/myLogo.png";
 
@@ -70,7 +59,7 @@ export default function Illustration()
                             <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
                             <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
                                 <h1 className="font-dmserif text-xl font-bold text-white">MoodBoard</h1>
-                                <p className="mb-3 text-xm italic text-white">Fro project Animena. This describes the color theory and overall feel of the app</p>
+                                <p className="mb-3 text-xm italic text-white">For project Animena. This describes the color theory and overall feel of the app</p>
                                 <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
                             </div>
                         </div>
@@ -195,7 +184,7 @@ export default function Illustration()
                             <img className=" w-[27rem]" src={MM} alt=""/>
                             <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
                             <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Mystic Messanger</h1>
+                                <h1 className="font-dmserif text-xl font-bold text-white">Mystic Messenger</h1>
                                 <p className="mb-3 text-xm italic text-white">Exploring Glow effect using photohsop brightness and sharpness features.</p>
                                 <AiFillInstagram fill="#FFFFFF" size={30}/>
                             </div>
@@ -207,7 +196,7 @@ export default function Illustration()
                             <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
                             <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
                                 <h1 className="font-dmserif text-xl font-bold text-white">Asthetic poster</h1>
-                                <p className="mb-3 text-xm italic text-white">Asthetic poster created in photoshop.IT describes the beauty within using asthetic and minimalistic design</p>
+                                <p className="mb-3 text-xm italic text-white">Asthetic poster created in photoshop. It describes the beauty within using asthetic and minimalistic design</p>
                                 <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
                             </div>
                         </div>

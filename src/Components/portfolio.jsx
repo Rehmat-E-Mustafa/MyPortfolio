@@ -108,7 +108,7 @@ export default function Portfolio()
                 <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <SiAdobexd size={75} fill="#878787"/>
                 </div>
-                <div className="grid place-content-center border-[#444444] sm:hover:border-r-0 sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-t-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-r-0 sm:hover:border-t-0 sm:hover:border-b-2 sm:hover:border-l-2  hover:border-b-2 hover:border-t-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
                 <FiFigma size={75}/>
                 </div>
                 <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-l-0 sm:hover:border-b-0  sm:hover:border-t-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
