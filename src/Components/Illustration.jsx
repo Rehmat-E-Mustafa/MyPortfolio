@@ -32,25 +32,25 @@ export default function Illustration()
 {
     return(
         <div className="bg-[#EAE8E8] h-full">
-            <div className="w-full flex place-content-between pr-8 p-4 fixed z-50 bg-[#EAE8E8]  ">
-                <div className="pl-20 ">
+             <div className="w-full flex justify-between pr-8 p-4 fixed z-50 bg-[#EAE8E8]  ">
+                <div className="sm:pl-20 pl-4">
                     <img src={Sign} className="w-24"/>
                 </div>
-                <div className="flex">
+                <div className="flex w-full sm:w-2/4 justify-around space-x-2 sm:space-x-4">
                     <Link to="/home">
-                        <h2 className="text-[#444444] p-4">Design</h2>
+                        <h2 className="text-[#F15A24] ">Design</h2>
                     </Link>
                     <Link to="/illustration">
-                        <h2 className="text-[#F15A24] p-4">Illustrations</h2>
+                        <h2 className="text-[#444444] ">Illustrations</h2>
                     </Link>
                     <Link to="/about">
-                        <h2 className="text-[#444444] p-4">About</h2>
+                        <h2 className="text-[#444444] ">About</h2>
                     </Link>
                     <Link to="/contact">
-                        <h2 className="text-[#444444] p-4">Contact</h2>
+                        <h2 className="text-[#444444] ">Contact</h2>
                     </Link>
                     <a href={Resume} download="Rehmat Resume">
-                        <h2 className="text-[#444444] font-semibold p-4">Resume</h2>
+                        <h2 className="text-[#444444] font-semibold ">Resume</h2>
                     </a>
                 </div>
                 
