@@ -21,13 +21,13 @@ export default function About()
                 </div>
                 <div className="flex w-full sm:w-2/4 justify-around space-x-2 sm:space-x-4">
                     <Link to="/home">
-                        <h2 className="text-[#F15A24] ">Design</h2>
+                        <h2 className="text-[#444444] ">Design</h2>
                     </Link>
                     <Link to="/illustration">
                         <h2 className="text-[#444444] ">Illustrations</h2>
                     </Link>
                     <Link to="/about">
-                        <h2 className="text-[#444444] ">About</h2>
+                        <h2 className="text-[#F15A24] ">About</h2>
                     </Link>
                     <Link to="/contact">
                         <h2 className="text-[#444444] ">Contact</h2>
