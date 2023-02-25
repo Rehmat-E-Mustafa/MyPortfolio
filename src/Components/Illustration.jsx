@@ -56,10 +56,10 @@ export default function Illustration()
                 
             </div>
             <div className="flex flex-col space-y-2 pt-20 items-center">
-                <img className="object-none h-[40rem] w-full pb-10 z-0" src={BFlower} alt="Signup" />
+                <img className="sm:object-none h-42 sm:h-80 sm:object-right md:h-[40rem] w-full pb-10 "  src={BFlower} />
                 <span className="w-full  p-0.5 bg-[#F7931E] lg:w-2/3"></span>
             </div>
-            <div className="h-40"></div>
+            <div className="h-20 sm:h-40"></div>
             {/* ------------------------------------------Work portion------------------------------------ */}
             
             <div className="w-full max-w-[100rem] sm:columns-1  md:columns-2 lg:columns-3 gap-5 ">
