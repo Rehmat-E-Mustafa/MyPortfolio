@@ -1,21 +1,7 @@
 import Img from "./images/Asset3.png";
-import MoodBoard from "./images/moodboard.jpeg";
 import DonarApp from "./images/donarapp.png";
-import Wireframe from "./images/wireFrame.png";
 import AnimeApp from "./images/animeApp.png";
-import Lily from "./images/lily.png";
-import BFlower from "./images/blackflower.png";
-import HalloweenSVG from "./images/halloweentransport.png";
-import Gojo from "./images/gojo.png";
-import LOGO from "./images/Logo.png";
-import Sun from "./images/sun.png";
-import Rose from "./images/rose.png";
-import Pika from "./images/pika.png";
-import Galaxy from "./images/galaxy.png";
-import MM from "./images/mm.png";
-import Beauty from "./images/beauty.png";
-import Minimal from "./images/minimal.png";
-import {AiFillBehanceCircle,AiFillInstagram } from "react-icons/ai";
+import SastaApp from "./images/sastaSafar.png";
 import Resume from "./images/Rehmat_cv.pdf";
 import {DiIllustrator} from "react-icons/di";
 import {DiPhotoshop} from "react-icons/di";
@@ -37,7 +23,10 @@ export default function Portfolio()
                 </div>
                 <div className="flex">
                     <Link to="/home">
-                        <h2 className="text-[#444444] p-4">Work</h2>
+                        <h2 className="text-[#F15A24] p-4">Design</h2>
+                    </Link>
+                    <Link to="/illustration">
+                        <h2 className="text-[#444444] p-4">Illustrations</h2>
                     </Link>
                     <Link to="/about">
                         <h2 className="text-[#444444] p-4">About</h2>
@@ -46,7 +35,7 @@ export default function Portfolio()
                         <h2 className="text-[#444444] p-4">Contact</h2>
                     </Link>
                     <a href={Resume} download="Rehmat Resume">
-                        <h2 className="text-[#F15A24] p-4">Resume</h2>
+                        <h2 className="text-[#444444] font-semibold p-4">Resume</h2>
                     </a>
                 </div>
                 
@@ -58,197 +47,52 @@ export default function Portfolio()
                 <div className="h-12"></div>
                 <span className="w-full p-0.5 bg-[#F7931E] lg:w-2/3"></span>
             </div>
-            <div className="h-40"></div>
+            <div className="h-32"></div>
             {/* ------------------------------------------Work portion------------------------------------ */}
-            
-            <div className="w-full max-w-[100rem] sm:columns-1  md:columns-2 lg:columns-3 gap-5">
-                <div className="flex flex-col flex-wrap space-y-6">
-                    <Link to="https://www.behance.net/gallery/157477497/Animena-UIUX-Design" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={MoodBoard} alt="MoodBoard" />
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">MoodBoard</h1>
-                                <p className="mb-3 text-xm italic text-white">Fro project Animena. This describes the color theory and overall feel of the app</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/157477497/Animena-UIUX-Design" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={Wireframe} alt="Wireframes"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Wireframes</h1>
-                                <p className="mb-3 text-xm italic text-white">Wireframe to demonstrate the initial working of project Animena</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/157477497/Animena-UIUX-Design" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={AnimeApp} alt="Animena App"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Animena</h1>
-                                <p className="mb-3 text-xm italic text-white">UI/UX project for anime recomendation App.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
 
+            <div className="flex flex-col sm:flex-row items-center m-10 lg:mt-20 lg:mb-10 lg:m-40 border-[#444444] hover:border-2">
+                <img src={SastaApp} className="w-3/4 sm:w-2/4"/>
+                <div className="flex flex-col m-8 space-y-2">
+                    <h1 className="md:text-4xl sm:text-2xl text-xl font-bold text-[#444444]">Sasta-Safar</h1>
+                    <h2 className="md:text-lg sm:text-md text-xs italic text-[#878787]">A mobile app for cheapest route finding </h2>
+                    <h3 className="md:text-2xl sm:text-lg text-xs">It provides cheapest route using public transport based in Lahore, Pakistan</h3>
+                    <div className="h-2"> </div>
+                    <Link to="https://www.behance.net/gallery/164622861/Sasta-Safar" target="_blank">
+                        <button className="h-8 sm:h-10 rounded-full hover:scale-105 hover:drop-shadow-lg bg-black w-32 sm:w-48 text-md sm:text-lg text-white">View Case Study
+                        </button>
+                    </Link>
+                    
+                </div>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center m-10 lg:mt-20 lg:mb-10 lg:m-40 border-[#444444] hover:border-2">
+                <img src={AnimeApp} className="w-3/4 sm:w-2/4"/>
+                <div className="flex flex-col m-8 space-y-2">
+                    <h1 className="md:text-4xl sm:text-2xl text-xl font-bold text-[#444444]">Animena</h1>
+                    <h2 className="md:text-lg sm:text-md text-xs italic text-[#878787]">A mobile app for anime recomendation</h2>
+                    <h3 className="md:text-2xl sm:text-lg text-xs">Want a app where you can find your new favourite show to binge watching?</h3>
+                    <div className="h-2"> </div>
+                    <Link to="https://www.behance.net/gallery/157477497/Animena-UIUX-Design" target="_blank">
+                        <button className="h-8 sm:h-10 rounded-full hover:scale-105 hover:drop-shadow-lg bg-black w-32 sm:w-48 text-md sm:text-lg text-white">View Case Study
+                        </button>
+                    </Link>
+                    
+                </div>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center m-10 lg:mt-20 lg:mb-10 lg:m-40 border-[#444444] hover:border-2">
+                <img src={DonarApp} className="w-3/4 sm:w-2/4"/>
+                <div className="flex flex-col m-8 space-y-2">
+                    <h1 className="md:text-4xl sm:text-2xl text-xl font-bold text-[#444444]">Doneture</h1>
+                    <h2 className="md:text-lg sm:text-md text-xs italic text-[#878787]">A mobile app for Donation Management</h2>
+                    <h3 className="md:text-2xl sm:text-lg text-xs">A donation management platform to bring ease to both Donars and NGO's</h3>
+                    <div className="h-2"> </div>
                     <Link to="https://www.behance.net/gallery/151029571/Doneture" target="_blank">
-                        <div className="row-span-2 drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={DonarApp} alt="Donar App"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Doneture</h1>
-                                <p className="mb-3 text-xm italic text-white">Fro Donation Management Mobile Application. This is a flutter project</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-
-                    <Link to="https://www.behance.net/gallery/154468517/Summer-digital-art" target="_blank">
-                        <div className="row-span-2 self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={Sun} alt="Sunset" />
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">SunSet</h1>
-                                <p className="mb-3 text-xm italic text-white">Digital art created on Krita.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
+                        <button className="h-8 sm:h-10 rounded-full hover:scale-105 hover:drop-shadow-lg bg-black w-32 sm:w-48 text-md sm:text-lg text-white">View Case Study
+                        </button>
                     </Link>
                     
-                    <Link to="https://www.behance.net/gallery/154467333/Desktop-wallpaper-Krita" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={BFlower} alt="flower"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Flower</h1>
-                                <p className="mb-3 text-xm italic text-white">Digital art created on Krita.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-
-                    
-                    <Link to="https://www.behance.net/gallery/154468391/desktop-wallpaper-Anime" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={Gojo} alt="Anime desktop wallpaper" />
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Asthetic</h1>
-                                <p className="mb-3 text-xm italic text-white">Asthetic Desktop wallpaper created on canva.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-
-                    <Link to="https://www.behance.net/gallery/149707671/Desktop-wallpaper-pikachu" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={Pika} alt="Pikachu desktop wallpaper"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Pikachu</h1>
-                                <p className="mb-3 text-xm italic text-white">Asthetic Pokemon themed desktop wallpaper created on canva.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154471897/Halloween-transport" target="_blank">
-                        <div className="row-span-1 self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={HalloweenSVG} alt="Halloween" />
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Halloween illustration</h1>
-                                <p className="mb-3 text-xm italic text-white">Halloween svg illustration created in illustrator</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154470745/Minimalist-Poster" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={Minimal} alt=""/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Minimalistic poster</h1>
-                                <p className="mb-3 text-xm italic text-white">Minimalist poster created in photoshop in the voulenteer work as a member of GDSC.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154469117/Postcard-floral" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className="w-[27rem]" src={Lily} alt="Pikachu desktop wallpaper"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Postcard</h1>
-                                <p className="mb-3 text-xm italic text-white">Asthetic postcard using free tool Krita</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/164558843/Digitise-logo" target="_blank">
-                        <div className="row-span-2 drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={LOGO} alt="Donar App"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Digitise Logo</h1>
-                                <p className="mb-3 text-xm italic text-white">Logo created during internship with "The Digitise" for the renewal of there website.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154469307/diital-art-infinite-beauty" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={Galaxy} alt="Pikachu desktop wallpaper"/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Infinity</h1>
-                                <p className="mb-3 text-xm italic text-white">Galaxy poster demonstrating the infinite opportunities awaiting to be captured by us.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154468777/digital-art-Rose" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={Rose} alt="Rose" />
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Rose</h1>
-                                <p className="mb-3 text-xm italic text-white">Digital art created on Krita using free hand water brush tool.</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.instagram.com/p/Cg2EImwNov0/?utm_source=ig_web_copy_link" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={MM} alt=""/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Mystic Messanger</h1>
-                                <p className="mb-3 text-xm italic text-white">Exploring Glow effect using photohsop brightness and sharpness features.</p>
-                                <AiFillInstagram fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to="https://www.behance.net/gallery/154472289/Asthetic-Poster" target="_blank">
-                        <div className="self-center drop-shadow-[0_7px_8px_rgba(0,0,0,0.5)] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow "> 
-                            <img className=" w-[27rem]" src={Beauty} alt=""/>
-                            <div className="absolute inset-0 bg-[#ED6A11] transition-opacity duration-500 opacity-0 group-hover:opacity-80"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                                <h1 className="font-dmserif text-xl font-bold text-white">Asthetic poster</h1>
-                                <p className="mb-3 text-xm italic text-white">Asthetic poster created in photoshop.IT describes the beauty within using asthetic and minimalistic design</p>
-                                <AiFillBehanceCircle fill="#FFFFFF" size={30}/>
-                            </div>
-                        </div>
-                    </Link>
                 </div>
             </div>
             
-                
             <div className="h-40"></div>
             <div className="w-full flex justify-center pb-20">
                 <h1 className="text-4xl text-[#444444] font-bold">My Skills</h1>
@@ -264,16 +108,16 @@ export default function Portfolio()
                 <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <SiAdobexd size={75} fill="#878787"/>
                 </div>
-                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-r-0 sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-b-2 hover:border-t-2 hover:border-r-2 drop-shadow-sm  md:h-52 sm:h-42 h-32 ">
                 <FiFigma size={75}/>
                 </div>
-                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-t-2 sm:hover:border-r-2 hover:border-l-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-l-0 sm:hover:border-b-0  sm:hover:border-t-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 hover:border-b-2 hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <ImHtmlFive2 size={75} />
                 </div>
-                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center border-[#444444] sm:hover:border-b-2 sm:hover:border-b-0 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <TbBrandCss3 size={95} stroke="#878787"/>
                 </div>
-                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 hover:border-t-2  hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
+                <div className="grid place-content-center  border-[#444444] sm:hover:border-b-2 sm:hover:border-l-2 sm:hover:border-r-2 sm:hover:border-b-0 hover:border-t-2  hover:border-r-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">
                 <FaReact size={85}/>
                 </div>
                 <div className="grid place-content-center border-[#444444] hover:border-t-2 hover:border-l-2 drop-shadow-sm md:h-52 sm:h-42 h-32 ">

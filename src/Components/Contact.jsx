@@ -57,16 +57,19 @@ export default function Contact()
                 </div>
                 <div className="flex">
                     <Link to="/home">
-                        <h2 className="text-[#444444] p-4">Work</h2>
+                        <h2 className="text-[#444444] p-4">Design</h2>
+                    </Link>
+                    <Link to="/illustration">
+                        <h2 className="text-[#444444] p-4">Illustrations</h2>
                     </Link>
                     <Link to="/about">
                         <h2 className="text-[#444444] p-4">About</h2>
                     </Link>
                     <Link to="/contact">
-                        <h2 className="text-[#444444] p-4">Contact</h2>
+                        <h2 className="text-[#F15A24] p-4">Contact</h2>
                     </Link>
                     <a href={Resume} download="Rehmat Resume">
-                        <h2 className="text-[#F15A24] p-4">Resume</h2>
+                        <h2 className="text-[#444444] font-semibold p-4">Resume</h2>
                     </a>
                 </div>
                 
